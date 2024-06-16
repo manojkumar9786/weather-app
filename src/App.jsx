@@ -29,6 +29,7 @@ const App = () => {
       });
 
       setWeatherData({ cityName, forecasts: fiveDaysForecast });
+      setCity("");
     } catch {
       alert("An error occurred while fetching the weather forecast!");
     }
@@ -83,7 +84,7 @@ const App = () => {
   }, [darkMode]);
 
   return (
-    <div className="min-h-screen flex flex-col items-center dark:bg-gray-900 bg-gray-300">
+    <div className="min-h-screen flex flex-col items-center dark:bg-gray-900 bg-gray-200">
       <nav className="flex justify-between w-full px-8 py-2 items-center border-b border-b-gray-400 shadow-xl">
         <img src={logo} alt="" className="w-20" />
         <button
