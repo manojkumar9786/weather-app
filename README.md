@@ -7,7 +7,7 @@ Table of Contents:
 - Getting Started
 - Running the Application Locally
 - Technologies Used
-- Known Issues
+- Known Issues Limitations
 
 # Getting Started
 
@@ -57,9 +57,11 @@ Table of Contents:
 
 - API Integration: The application integrates with the OpenWeatherMap API to fetch weather data based on city name or user’s current location.
 
-# Known Issues
+# Known Issues Limitations
 
  - Geolocation: If the user denies geolocation permissions, the application cannot fetch the current location's weather data.
+
+ - API Limits: The application relies on the OpenWeatherMap free tier, which has limitations on the number of requests per minute.
 
  - Error Handling: Basic error handling is implemented, but could be enhanced for better user feedback.
      
